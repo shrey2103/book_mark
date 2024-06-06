@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d54f50f266.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/release/v5.10.0/css/all.css" integrity="sha384-AYmEC3YwScVb3ZcuHtOA9#%dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" > -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="shop1.css" rel="stylesheet">
+    <link href="pdetails.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve the image URL from the query parameter
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const imageUrl = urlParams.get("image");
+            const name = urlParams.get("name");
+            const price = urlParams.get("price");
+
+            // Set the src attribute of the image
+            const productImage = document.querySelector("#product-image");
+            if (productImage) {
+                productImage.src = imageUrl;
+            }
+
+            document.getElementById("product-name").textContent = name;
+            document.getElementById("product-price").textContent = price;
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="books\logo (2).png" alt="logo" style="width: 200px; height: 50px;"></a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!--<li class="navbar-nav ml-auto">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="lhome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products1.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ebooks.html">E-books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="demo.html">FeedBack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.css">
+                            <i class="fa fa-shopping-cart" aria-hidden="true" id="cart-icon" style="color: black;"></i>
+                        </a>
+                    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+
+    <section class="container my-5 pt-5">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid" id="product-image" alt="" style="width: 350px;height: 450px;">
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Products/Details</h6>
+                <b><h3 class="py-4" style="text-transform: uppercase" id="product-name"></h3></b>
+                <b><h4 id="product-price"></h4></b>
+
+                <br />
+                <div class="quantity">
+                    <h5 class="quantity">Quantity:</h5>
+                    <select class="form-control form-control-sm w-25">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="1">3</option>
+                        <option value="2">4</option>
+                    </select>
+                </div>
+
+                <br/>
+                
+                <div>
+                    <button class="buy-btn" style="font-size: 0.8rem; font-weight: 700; outline: none; border: none; background-color: coral; color: aliceblue; padding: 13px 30px; cursor: pointer; text-transform: uppercase;"><a href="cart.html">ADD TO CART</a> </button>
+                     <p style="color: darkred"></p>
+                </div>
+                <div>
+                    <h3 class="mt-5" style="font-family: Calibri">Product Description</h3>
+                    <p style="font-size: 12px">---None-----</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+

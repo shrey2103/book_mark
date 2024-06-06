@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="registerstyle.css">
+        <script>
+    function showAlertAndRedirect() {
+        // Display an alert box
+        alert("Registered successfully!");
+
+        // After the user clicks "OK," redirect to another page
+        window.location.href = "login.html"; // Replace with your desired URL
+    }
+
+        </script>
+    </head>
+    <body>
+        <div class="box box1">
+            <span class="borderLine"></span>
+            <form>
+                <h2>Admin Registration</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Full Name</span>
+                    <i></i>
+                 </div>
+                 <div class="inputBox">
+                    <input type="number" required="required">
+                    <span>Mobile number</span>
+                    <i></i>
+                 </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Username</span>
+                    <i></i>
+                 </div>
+                 <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <br><br>
+                <input type="submit" value="Register" onclick="showAlertAndRedirect()">
+                <div class="links">
+                    <a href="login.html">Already a customer? Login</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
