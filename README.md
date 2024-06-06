@@ -21,18 +21,25 @@ Checkout Process: A streamlined checkout process guiding users through billing a
 5. User Account
 Login/Signup: Secure login and signup forms with options to sign in using social media accounts.
 Profile Management: Users can manage their profiles, view order history, and track the status of their current orders.
+
 Technologies Used
-HTML
+
+HTML:-
 Structure: Semantic HTML5 tags are used to create a clean and well-organized structure for the website.
 Forms: Custom forms for user login, signup, and checkout processes.
-CSS
+
+CSS:-
+
 Styling: Custom CSS to style various elements of the website, ensuring a unique and cohesive look and feel.
 Animations: Subtle animations and transitions to enhance user interaction.
-Bootstrap
+
+Bootstrap:-
 Grid System: Bootstrap's grid system is used for a responsive layout that adjusts seamlessly across devices.
 Components: Various Bootstrap components like navbar, modals, buttons, and cards are utilized to build interactive and consistent UI elements.
 Utilities: Bootstrap utility classes are used to manage spacing, alignment, and visibility, ensuring a clean and efficient design.
+
 Conclusion
+
 At Book Mark, we aim to combine the joy of reading with the convenience of online shopping. Our front-end focused approach using HTML, CSS, and Bootstrap ensures that users have a pleasant, intuitive, and hassle-free experience while browsing and purchasing their favorite books. Whether you're a casual reader or a book aficionado, our website is designed to cater to all your literary needs.
 
 Explore our collection, find your next great read, and enjoy a seamless shopping experience at Book Mark!
